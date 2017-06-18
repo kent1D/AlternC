@@ -8,11 +8,11 @@
 <meta name="description" content="AlternC, Web and Mail Hosting software control panel.">
 <meta name="keywords" content="AlternC Software Linux Debian Gnu Hosting Web Mail">
 
-<title>AlternC<?php if ($title) { echo " - ".$title; } ?></title>
+      <title>AlternC<?php if (isset($title)) { echo " - ".$title; } ?></title>
 
 <!-- Bootstrap core CSS -->
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/bootstrap.min.css">
 
 <link rel="stylesheet" href="/assets/css/docs.min.css">
 
@@ -21,8 +21,8 @@
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <script src="/assets/html5shiv.min.js"></script>
+  <script src="/assets/respond.min.js"></script>
 <![endif]-->
 
 <!-- Favicons -->
@@ -50,7 +50,7 @@
    echo "Web and Mail server management software";
    } 
 ?></p>
-			 <?php if ($title) { echo "<p>".$title."</p>"; } ?>
+<?php if (isset($title)) { echo "<p>".$title."</p>"; } ?>
       </div>
     </div>
 
