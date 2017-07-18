@@ -9,7 +9,11 @@ $locales=array("fr" => "fr_FR.UTF-8",
 	       "en" => "en_GB.UTF-8",
 	       );
 
-$uri=trim($_SERVER["REQUEST_URI"],"/");
+if (isset($_SERVER["REQUEST_URI"])) {
+    $uri=trim($_SERVER["REQUEST_URI"],"/");
+} else {
+    $uri=trim($argv[1],"/");
+}
 
 $lang="en";
 if (isset($_SERVER["HTTP_ACCEPT_LANGUAGE"])) {
