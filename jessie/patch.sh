@@ -13,6 +13,8 @@ patch <../jessie/changelog.diff
 popd
 
 cp vhost.conf ../etc/alternc/templates/apache2/
+cp roundcube-ssl.conf ../ssl/templates/
+cp squirrelmail-ssl.conf ../ssl/templates/
 cp bureau.conf ../etc/alternc/templates/alternc/
 cp alternc.install ../install/
 cp apache2.conf ../etc/alternc/templates/alternc/
