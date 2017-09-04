@@ -16,7 +16,8 @@ cp vhost.conf ../etc/alternc/templates/apache2/
 cp roundcube-ssl.conf ../ssl/templates/
 cp squirrelmail-ssl.conf ../ssl/templates/
 cp roundcube.conf ../roundcube/templates/apache2/
-cp squirrelmail-ssl.conf .../squirrelmail/templates/apache2/
+cp squirrelmail-ssl.conf ../squirrelmail/templates/apache2/
+cp alterncawstats.conf ../awstats/
 cp bureau.conf ../etc/alternc/templates/alternc/
 cp alternc.install ../install/
 cp apache2.conf ../etc/alternc/templates/alternc/
